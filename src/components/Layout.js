@@ -11,7 +11,7 @@ import GlobalStyle from "../global/GlobalStyle";
 import Navbar from "../components/Navbar";
 
 // Theme
-import theme from "../../global/theme";
+import theme from "../global/theme";
 
 // Reset default browser styles
 import "../global/reset.css";
@@ -59,13 +59,33 @@ const TemplateWrapper = ({ children }) => {
         />
       </Helmet>
       <ThemeProvider theme={theme}>
-        {/* <Navbar /> */}
-        <GlobalStyle />
-        <div>{children}</div>
-        <Footer />
+        <Container>
+          <Wrapper>
+            <GlobalStyle />
+            {/* <Navbar /> */}
+            <Main>{children}</Main>
+            <Footer />
+          </Wrapper>
+        </Container>
       </ThemeProvider>
     </div>
   );
 };
 
 export default TemplateWrapper;
+
+const Container = styled.div`
+  width: 100%;
+  background-color: #ef8c8c;
+  min-width: 320px;
+`;
+
+const Wrapper = styled.div`
+  max-width: 1150px;
+  margin: 0 auto;
+`;
+
+const Main = styled.div`
+  width: 100%;
+  height: 100%;
+`;
