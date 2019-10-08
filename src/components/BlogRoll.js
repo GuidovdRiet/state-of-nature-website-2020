@@ -1,70 +1,61 @@
-import React from 'react'
-import PropTypes from 'prop-types'
-import { Link, graphql, StaticQuery } from 'gatsby'
-import PreviewCompatibleImage from './PreviewCompatibleImage'
+import React from "react";
+import PropTypes from "prop-types";
+import styled from "styled-components";
+import { Link, graphql, StaticQuery } from "gatsby";
+import PreviewCompatibleImage from "./PreviewCompatibleImage";
 
 class BlogRoll extends React.Component {
   render() {
-    const { data } = this.props
-    const { edges: posts } = data.allMarkdownRemark
+    const { data } = this.props;
+    const { edges: posts } = data.allMarkdownRemark;
 
     return (
-      <div className="columns is-multiline">
+      <div>
         {posts &&
           posts.map(({ node: post }) => (
-            <div className="is-parent column is-6" key={post.id}>
-              <article
-                className={`blog-list-item tile is-child box notification ${
-                  post.frontmatter.featuredpost ? 'is-featured' : ''
-                }`}
-              >
+            <Post key={post.id}>
+              <article className="article">
                 <header>
                   {post.frontmatter.featuredimage ? (
-                    <div className="featured-thumbnail">
+                    <div className="photo">
                       <PreviewCompatibleImage
                         imageInfo={{
                           image: post.frontmatter.featuredimage,
-                          alt: `featured image thumbnail for post ${post.title}`,
+                          alt: `featured image thumbnail for post ${post.title}`
                         }}
                       />
                     </div>
                   ) : null}
-                  <p className="post-meta">
-                    <Link
-                      className="title has-text-primary is-size-4"
-                      to={post.fields.slug}
-                    >
-                      {post.frontmatter.title}
-                    </Link>
+                  <p>
+                    <Link to={post.fields.slug}>{post.frontmatter.title}</Link>
                     <span> &bull; </span>
-                    <span className="subtitle is-size-5 is-block">
-                      {post.frontmatter.date}
-                    </span>
+                    <span>{post.frontmatter.date}</span>
                   </p>
                 </header>
-                <p>
+                <p className="text">
+                  <h1>{post.frontmatter.title}</h1>
                   {post.excerpt}
-                  <br />
+                  {/* <br />
                   <br />
                   <Link className="button" to={post.fields.slug}>
                     Keep Reading →
-                  </Link>
+                  </Link> */}
                 </p>
               </article>
-            </div>
+            </Post>
           ))}
       </div>
-    )
+    );
   }
 }
 
 BlogRoll.propTypes = {
   data: PropTypes.shape({
     allMarkdownRemark: PropTypes.shape({
-      edges: PropTypes.array,
-    }),
-  }),
-}
+      edges: PropTypes.array
+    })
+  })
+};
 
 export default () => (
   <StaticQuery
@@ -101,4 +92,22 @@ export default () => (
     `}
     render={(data, count) => <BlogRoll data={data} count={count} />}
   />
-)
+);
+
+const Post = styled.div`
+  margin-bottom: 20px;
+  .article {
+    display: flex;
+    background-color: ${({ theme }) => theme.white};
+  }
+  .photo {
+    flex: 1;
+  }
+  .text {
+    flex: 1;
+    padding: 0 0 0 40px;
+    h1 {
+      margin-bottom: 10px;
+    }
+  }
+`;

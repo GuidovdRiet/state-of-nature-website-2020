@@ -3,6 +3,8 @@ import PropTypes from "prop-types";
 import { Link, graphql } from "gatsby";
 import styled from "styled-components";
 
+// Components
+import Card from "../components/layout/Card";
 import Layout from "../components/Layout";
 import Features from "../components/Features";
 import BlogRoll from "../components/BlogRoll";
@@ -17,6 +19,7 @@ export const IndexPageTemplate = ({
   intro
 }) => (
   <Wrapper>
+    <Card type="logo" className="header" />
     <BlogRoll />
   </Wrapper>
 );
@@ -63,6 +66,10 @@ export default IndexPage;
 
 const Wrapper = styled.div`
   background-color: ${({ theme }) => theme.pink};
+  .header {
+    width: 100%;
+    height: 300px;
+  }
 `;
 
 export const pageQuery = graphql`
