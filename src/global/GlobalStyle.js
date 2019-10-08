@@ -1,4 +1,4 @@
-import { createGlobalStyle } from "styled-components";
+import { withTheme, createGlobalStyle } from "styled-components";
 
 const GlobalStyle = createGlobalStyle`
   h1 {
@@ -10,6 +10,9 @@ const GlobalStyle = createGlobalStyle`
   p {
     font-family: "Source Sans", sans-serif;
   }
+  body {
+    background-color: ${({ theme }) => theme.pink};
+  }
 `;
 
-export default GlobalStyle;
+export default withTheme(GlobalStyle);
