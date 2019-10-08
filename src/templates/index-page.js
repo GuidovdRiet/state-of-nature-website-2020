@@ -15,7 +15,11 @@ export const IndexPageTemplate = ({
   mainpitch,
   description,
   intro
-}) => <Wrapper></Wrapper>;
+}) => (
+  <Wrapper>
+    <BlogRoll />
+  </Wrapper>
+);
 
 IndexPageTemplate.propTypes = {
   image: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),

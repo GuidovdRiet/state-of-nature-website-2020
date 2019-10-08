@@ -76,7 +76,6 @@ export default TemplateWrapper;
 
 const Container = styled.div`
   width: 100%;
-  background-color: #ef8c8c;
   min-width: 320px;
 `;
 
