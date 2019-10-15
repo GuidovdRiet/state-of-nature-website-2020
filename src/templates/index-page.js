@@ -4,10 +4,9 @@ import { Link, graphql } from "gatsby";
 import styled from "styled-components";
 
 // Components
-import Card from "../components/layout/Card";
 import Layout from "../components/Layout";
-import Features from "../components/Features";
 import BlogRoll from "../components/BlogRoll";
+import Header from "../components/layout/header/Header";
 
 export const IndexPageTemplate = ({
   image,
@@ -19,7 +18,7 @@ export const IndexPageTemplate = ({
   intro
 }) => (
   <Wrapper>
-    <Card type="logo" className="header" />
+    <Header />
     <BlogRoll />
   </Wrapper>
 );

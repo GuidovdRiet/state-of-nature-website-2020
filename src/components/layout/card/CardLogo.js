@@ -1,5 +1,5 @@
-import React from "react";
-import styled, { keyframes } from "styled-components";
+import React from "./node_modules/react";
+import styled, { keyframes } from "./node_modules/styled-components";
 
 // Components
 import SVG from "../media/svg/SVG";
@@ -12,14 +12,14 @@ const CardLogo = ({ className }) => {
       <SVG type="star" className="star star-second" />
       <SVG type="star" className="star star-third" />
 
-      {/* <div className="social-wrapper">
+      <div className="social-wrapper">
         <a href="https://www.instagram.com/ourstateofnature/" target="_blank">
           <SVG type="instagram" className="instagram" />
         </a>
         <a href="https://www.facebook.com/ourstateofnature" target="_blank">
           <SVG type="facebook" className="facebook" />
         </a>
-      </div> */}
+      </div>
     </Card>
   );
 };
