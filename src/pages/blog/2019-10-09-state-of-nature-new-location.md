@@ -13,7 +13,7 @@ description: >
   nisl. Pellentesque et libero a velit efficitur faucibus. Nunc sed commodo
   libero.
 featuredpost: true
-featuredimage: /img/home-jumbotron.jpg
+featuredimage: /img/screenshot-2019-10-15-at-21.59.40.png
 tags:
   - festival
 ---
