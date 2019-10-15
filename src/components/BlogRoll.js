@@ -2,7 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 import styled from "styled-components";
 import { Link, graphql, StaticQuery } from "gatsby";
-import PreviewCompatibleImage from "./PreviewCompatibleImage";
+import BackgroundImage from "gatsby-background-image";
 
 class BlogRoll extends React.Component {
   render() {
@@ -10,41 +10,23 @@ class BlogRoll extends React.Component {
     const { edges: posts } = data.allMarkdownRemark;
 
     return (
-      <div>
+      <Wrapper>
         {posts &&
-          posts.map(({ node: post }) => (
-            <Post key={post.id}>
-              <article className="article">
-                <header>
-                  {post.frontmatter.featuredimage ? (
-                    <div className="photo">
-                      <PreviewCompatibleImage
-                        imageInfo={{
-                          image: post.frontmatter.featuredimage,
-                          alt: `featured image thumbnail for post ${post.title}`
-                        }}
-                      />
-                    </div>
-                  ) : null}
-                  <p>
-                    <Link to={post.fields.slug}>{post.frontmatter.title}</Link>
-                    <span> &bull; </span>
-                    <span>{post.frontmatter.date}</span>
-                  </p>
-                </header>
-                <p className="text">
-                  <h1>{post.frontmatter.title}</h1>
-                  {post.excerpt}
-                  {/* <br />
-                  <br />
-                  <Link className="button" to={post.fields.slug}>
-                    Keep Reading →
-                  </Link> */}
-                </p>
-              </article>
+          posts.map(({ node: post }, i) => (
+            <Post key={post.id} index={i}>
+              {post.frontmatter.featuredimage && (
+                <BackgroundImage
+                  fluid={post.frontmatter.featuredimage.childImageSharp.fluid}
+                  className="post-image"
+                />
+              )}
+              <div className="text">
+                <h1>{post.frontmatter.title}</h1>
+                <p>{post.excerpt}</p>
+              </div>
             </Post>
           ))}
-      </div>
+      </Wrapper>
     );
   }
 }
@@ -79,7 +61,7 @@ export default () => (
                 featuredpost
                 featuredimage {
                   childImageSharp {
-                    fluid(maxWidth: 120, quality: 100) {
+                    fluid(maxWidth: 400, quality: 100) {
                       ...GatsbyImageSharpFluid
                     }
                   }
@@ -94,18 +76,29 @@ export default () => (
   />
 );
 
+const Wrapper = styled.div`
+  display: flex;
+  flex-direction: column;
+`;
+
 const Post = styled.div`
   margin-bottom: 20px;
-  .article {
-    display: flex;
-    background-color: ${({ theme }) => theme.white};
+  background-color: ${({ theme }) => theme.white};
+  flex-direction: ${({ index }) => index % 2 && "row-reverse"};
+  display: flex;
+  min-height: 350px;
+
+  .post-image {
+    width: 350px;
+    height: 350px;
   }
-  .photo {
-    flex: 1;
-  }
+
   .text {
+    display: flex;
+    padding: 10px 160px 10px 40px;
+    justify-content: center;
+    flex-direction: column;
     flex: 1;
-    padding: 0 0 0 40px;
     h1 {
       margin-bottom: 10px;
     }
