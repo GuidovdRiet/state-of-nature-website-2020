@@ -11,7 +11,7 @@ description: >
   varius eu risus a, rhoncus commodo nisl. Aenean cursus elit vitae velit ornare
   vestibulum.
 featuredpost: true
-featuredimage: /img/flavor_wheel.jpg
+featuredimage: /img/screenshot-2019-10-15-at-21.54.18.png
 tags:
   - Innovation
 ---
