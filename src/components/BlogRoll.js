@@ -82,15 +82,16 @@ const Wrapper = styled.div`
 `;
 
 const Post = styled.div`
-  margin-bottom: 20px;
-  background-color: ${({ theme }) => theme.white};
+  margin-bottom: 62px;
   flex-direction: ${({ index }) => index % 2 && "row-reverse"};
   display: flex;
   min-height: 350px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
 
   .post-image {
     width: 350px;
     height: 350px;
+    margin: ${({ index }) => (index % 2 ? "0 0 0 11px" : "0 11px 0 0")};
   }
 
   .text {
@@ -99,8 +100,13 @@ const Post = styled.div`
     justify-content: center;
     flex-direction: column;
     flex: 1;
+    background-color: ${({ theme }) => theme.white};
+    border: 4px solid ${({ theme }) => theme.purple};
     h1 {
       margin-bottom: 10px;
+    }
+    p {
+      margin: 0;
     }
   }
 `;
