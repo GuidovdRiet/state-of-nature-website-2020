@@ -13,7 +13,7 @@ description: >-
   dui eu posuere. Aliquam tristique quam et efficitur dignissim. Phasellus ut
   tellus et lacus fermentum dapibus. Donec non tempus arcu.
 featuredpost: true
-featuredimage: /img/products-full-width.jpg
+featuredimage: /img/screenshot-2019-10-15-at-21.59.13.png
 tags:
   - Festival
 ---
