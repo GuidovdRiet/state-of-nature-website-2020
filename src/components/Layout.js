@@ -5,10 +5,10 @@ import styled from "styled-components";
 import { withPrefix } from "gatsby";
 
 // Components
-import Footer from "../components/Footer";
+import Footer from "./Footer";
 import useSiteMetadata from "./SiteMetadata";
 import GlobalStyle from "../global/GlobalStyle";
-import Navbar from "../components/Navbar";
+import Header from "./layout/header/Header";
 
 // Theme
 import theme from "../global/theme";
@@ -62,7 +62,7 @@ const TemplateWrapper = ({ children }) => {
         <Container>
           <Wrapper>
             <GlobalStyle />
-            {/* <Navbar /> */}
+            <Header />
             <Main>{children}</Main>
             <Footer />
           </Wrapper>

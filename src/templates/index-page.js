@@ -18,7 +18,6 @@ export const IndexPageTemplate = ({
   intro
 }) => (
   <Wrapper>
-    <Header />
     <BlogRoll />
   </Wrapper>
 );

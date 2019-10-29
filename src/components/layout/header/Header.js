@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import { Link } from "gatsby";
 
 // Component
 import SVG from "../../media/svg/SVG";
@@ -7,9 +8,16 @@ import SVG from "../../media/svg/SVG";
 const Header = () => {
   return (
     <Wrapper>
-      <SVG type="logo" className="logo" />
+      <Link to="/" className="logo">
+        <SVG type="logo" />
+      </Link>
       <div className="nav">
-        <p className="nav-item">contact</p>
+        <Link to="/" className="nav-item">
+          Home
+        </Link>
+        <Link to="/contact" className="nav-item">
+          Contact
+        </Link>
         <div className="social-wrapper">
           <a href="https://www.instagram.com/ourstateofnature/" target="_blank">
             <SVG type="instagram" className="instagram" />
@@ -41,6 +49,8 @@ const Wrapper = styled.header`
     font-size: 1.1rem;
     color: ${({ theme }) => theme.purple};
     margin: 5px 7px 0 0;
+    text-decoration: none;
+    max-height: 21px;
   }
   .social-wrapper {
     .facebook,
