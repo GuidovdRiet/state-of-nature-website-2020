@@ -1,22 +1,51 @@
 ---
 templateKey: blog-post
-title: State of Nature 2020
+title: Uitleg State of Nature
 date: 2019-10-09T17:56:27.084Z
 description: >-
-  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce euismod elit
-  magna, non luctus odio ultrices eget. Cras ultricies dolor eros, vitae aliquam
-  arcu sodales quis. Nulla facilisi. Etiam luctus, arcu ac tristique suscipit,
-  tortor dolor vestibulum libero, elementum pretium purus sem a turpis. Cras at
-  purus sit amet augue efficitur rhoncus. Vestibulum maximus et turpis vitae
-  blandit. Integer a dui sapien. Nulla facilisi. Nam facilisis erat ut maximus
-  dignissim. Curabitur hendrerit dictum metus ut feugiat. Fusce auctor dapibus
-  dui eu posuere. Aliquam tristique quam et efficitur dignissim. Phasellus ut
-  tellus et lacus fermentum dapibus. Donec non tempus arcu.
+  State of Nature gaat vanuit de filosofie in op hoe men met elkaar om zou gaan
+  als er geen regels, maatschappij en overheid zouden bestaan. Deze filosofie
+  draait om een samen- leving zonder restricties.
+
+  Het zit in de mens om buiten te leven, spelen en bewegen. In een wereld die
+  steeds meer digitaliseert en waarbij mensen elkaar niet meer zien als ze met
+  elkaar communiceren
+
+  is het van groot belang om deze intrinsieke motivatie aan te spreken. Het
+  betekent dat het in de natuur van de mens zit om lekker naar buiten te gaan en
+  te genieten van bos, berg, fluitende vogels, zonneschijn en de wind die door
+  de bomen waait. Dit is hetgeen dat Zuid-Limburg te bieden heeft en waarvan wij
+  denken dat jongeren dit te weinig ervaren.
+
+  Mensen één laten worden met de natuur en cultuur die een regio te bieden
+  heeft en daar-
+   5
+  door de band met de kwaliteiten versterken. Deze hoofdlijn in onze visie sluit
+  aan bij de doelstellingen die vanuit het Cittaslow keur- merk als basis
+  dienen.
+
+  Onder cultuur verstaan wij al het materiële
+
+  en immateriële dat een regio definieert; het DNA van een regio.Het DNA van de
+  regio is bepalend voor de selectie aan cultuuruitingen tijdens het evenement.
+
+  Onder natuur verstaan wij alle flora en fauna die in een regio aanwezig is.
+  Belangrijk hierbij is het instandhouden van onze leefomgeving door te kijken
+  naar de impact die wij als mens (de organisatie zelf en de bezoekers van het
+  evenement) hebben.
 featuredpost: true
 featuredimage: /img/screenshot-2019-10-15-at-21.59.13.png
 tags:
-  - Festival
+  - Duurzaam evenement
 ---
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum elit lorem, feugiat a gravida vel, dignissim vitae est. Nunc odio arcu, pulvinar at nulla sed, pellentesque lacinia magna. Sed orci augue, porttitor quis urna nec, lacinia dapibus ligula. Donec commodo, nisi quis egestas finibus, nisl magna commodo quam, at sollicitudin quam justo sed neque. Sed aliquet, tortor nec consectetur sodales, ipsum enim auctor turpis, eget suscipit dui metus sit amet felis. Sed libero tortor, suscipit faucibus aliquam ac, tempus id elit. Donec pretium in metus vitae aliquam.
+State of Nature gaat vanuit de filosofie in op hoe men met elkaar om zou gaan als er geen regels, maatschappij en overheid zouden bestaan. Deze filosofie draait om een samen- leving zonder restricties.
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum elit lorem, feugiat a gravida vel, dignissim vitae est. Nunc odio arcu, pulvinar at nulla sed, pellentesque lacinia magna. Sed orci augue, porttitor quis urna nec, lacinia dapibus ligula. Donec commodo, nisi quis egestas finibus, nisl magna commodo quam, at sollicitudin quam justo sed neque. Sed aliquet, tortor nec consectetur sodales, ipsum enim auctor turpis, eget suscipit dui metus sit amet felis. Sed libero tortor, suscipit faucibus aliquam ac, tempus id elit. Donec pretium in metus vitae aliquam.
+Het zit in de mens om buiten te leven, spelen en bewegen. In een wereld die steeds meer digitaliseert en waarbij mensen elkaar niet meer zien als ze met elkaar communiceren
+
+is het van groot belang om deze intrinsieke motivatie aan te spreken. Het betekent dat het in de natuur van de mens zit om lekker naar buiten te gaan en te genieten van bos, berg, fluitende vogels, zonneschijn en de wind die door de bomen waait. Dit is hetgeen dat Zuid-Limburg te bieden heeft en waarvan wij denken dat jongeren dit te weinig ervaren.
+
+Mensen één laten worden met de natuur en cultuur die een regio te bieden heeft en daardoor de band met de kwaliteiten versterken. Deze hoofdlijn in onze visie sluit aan bij de doelstellingen die vanuit het Cittaslow keur- merk als basis dienen.
+
+Onder cultuur verstaan wij al het materiële en immateriële dat een regio definieert; het DNA van een regio.Het DNA van de regio is bepalend voor de selectie aan cultuuruitingen tijdens het evenement.
+
+Onder natuur verstaan wij alle flora en fauna die in een regio aanwezig is. Belangrijk hierbij is het instandhouden van onze leefomgeving door te kijken naar de impact die wij als mens (de organisatie zelf en de bezoekers van het evenement) hebben.
