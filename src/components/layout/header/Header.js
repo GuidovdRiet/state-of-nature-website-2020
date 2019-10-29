@@ -36,6 +36,9 @@ export default Header;
 const Wrapper = styled.header`
   margin: 40px 0 55px 0;
   display: flex;
+  @media (max-width: 1150px) {
+    margin: 40px 16px 55px 16px;
+  }
   .logo {
     max-width: 144px;
     flex: 1;

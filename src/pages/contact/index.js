@@ -120,6 +120,9 @@ export default class Index extends React.Component {
 const Wrapper = styled.div`
   background-color: #ffb7b7;
   padding: 40px 30px;
+  @media (max-width: 1150px) {
+    margin: 0 16px;
+  }
   .control {
     margin-bottom: 25px;
   }

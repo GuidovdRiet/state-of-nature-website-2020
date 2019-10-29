@@ -82,16 +82,27 @@ const Wrapper = styled.div`
 `;
 
 const Post = styled.div`
-  margin-bottom: 62px;
+  margin: 0 0 65px 0;
   flex-direction: ${({ index }) => index % 2 && "row-reverse"};
   display: flex;
   min-height: 350px;
   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
 
+  @media (max-width: 1150px) {
+    margin: 0 16px 65px 16px;
+    flex-direction: column;
+    .post-image {
+      width: 100%;
+    }
+  }
+
   .post-image {
     width: 350px;
     height: 350px;
     margin: ${({ index }) => (index % 2 ? "0 0 0 11px" : "0 11px 0 0")};
+    @media (max-width: 1150px) {
+      width: 100%;
+    }
   }
 
   .text {
@@ -107,6 +118,9 @@ const Post = styled.div`
     }
     p {
       margin: 0;
+    }
+    @media (max-width: 1150px) {
+      padding: 32px 40px 32px 40px;
     }
   }
 `;
