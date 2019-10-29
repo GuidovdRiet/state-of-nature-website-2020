@@ -5,6 +5,7 @@ const theme = {
   purple: "#1D184A",
   white: "#fff",
   beige: "#F8F9E2",
+  darkGrey: "#332525",
 
   fontSmoothing: `
     -webkit-font-smoothing: antialiased;

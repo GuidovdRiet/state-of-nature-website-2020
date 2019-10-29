@@ -86,6 +86,7 @@ export default Footer;
 const Wrapper = styled.footer`
   margin: 130px 0;
   .logo-wrapper {
+    display: flex;
     justify-content: center;
   }
   .logo {
