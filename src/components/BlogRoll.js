@@ -108,6 +108,7 @@ const Post = styled.div`
     margin: ${({ index }) => (index % 2 ? "0 0 0 11px" : "0 11px 0 0")};
     @media (max-width: 1150px) {
       width: 100%;
+      margin: 0;
     }
   }
 
