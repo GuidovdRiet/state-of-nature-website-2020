@@ -16,6 +16,9 @@ import theme from "../global/theme";
 // Reset default browser styles
 import "../global/reset.css";
 
+// Assets
+import cornerArt from "../img/drawings/cornerArt.svg";
+
 const TemplateWrapper = ({ children }) => {
   const { title, description } = useSiteMetadata();
   return (
@@ -60,6 +63,7 @@ const TemplateWrapper = ({ children }) => {
       </Helmet>
       <ThemeProvider theme={theme}>
         <Container>
+          <img src={cornerArt} alt="Corner Art" className="corner-art" />
           <Wrapper>
             <GlobalStyle />
             <Header />
@@ -77,6 +81,16 @@ export default TemplateWrapper;
 const Container = styled.div`
   width: 100%;
   min-width: 320px;
+  .corner-art {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    max-width: 730px;
+    @media (max-width: 320px) {
+      width: 180px;
+    }
+  }
 `;
 
 const Wrapper = styled.div`

@@ -19,10 +19,18 @@ const Header = () => {
           Contact
         </Link>
         <div className="social-wrapper">
-          <a href="https://www.instagram.com/ourstateofnature/" target="_blank">
+          <a
+            href="https://www.instagram.com/ourstateofnature/"
+            target="_blank"
+            className="social-link"
+          >
             <SVG type="instagram" className="instagram" />
           </a>
-          <a href="https://www.facebook.com/ourstateofnature" target="_blank">
+          <a
+            href="https://www.facebook.com/ourstateofnature"
+            target="_blank"
+            className="social-link"
+          >
             <SVG type="facebook" className="facebook" />
           </a>
         </div>
@@ -34,28 +42,37 @@ const Header = () => {
 export default Header;
 
 const Wrapper = styled.header`
-  margin: 40px 0 55px 0;
+  margin: 40px 0 90px 0;
   display: flex;
   @media (max-width: 1150px) {
     margin: 40px 16px 55px 16px;
   }
   .logo {
-    max-width: 144px;
+    max-width: 134px;
     flex: 1;
+    transform: translate(0, 8px);
   }
   .nav {
     display: flex;
     flex: 4;
     justify-content: flex-end;
+    align-items: center;
   }
   .nav-item {
     font-size: 1.1rem;
     color: ${({ theme }) => theme.purple};
-    margin: 5px 7px 0 0;
+    margin-right: 16px;
     text-decoration: none;
     max-height: 21px;
   }
   .social-wrapper {
+    display: flex;
+    margin-top: 2px;
+    .social-link {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
     .facebook,
     .instagram {
       margin: 8px;

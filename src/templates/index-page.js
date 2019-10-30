@@ -63,7 +63,6 @@ IndexPage.propTypes = {
 export default IndexPage;
 
 const Wrapper = styled.div`
-  background-color: ${({ theme }) => theme.pink};
   .header {
     width: 100%;
     height: 300px;
