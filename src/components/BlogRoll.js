@@ -4,6 +4,9 @@ import styled from "styled-components";
 import { Link, graphql, StaticQuery } from "gatsby";
 import BackgroundImage from "gatsby-background-image";
 
+// Components
+import Button from "./button/Button";
+
 class BlogRoll extends React.Component {
   render() {
     const { data } = this.props;
@@ -23,6 +26,9 @@ class BlogRoll extends React.Component {
               <div className="text">
                 <h1>{post.frontmatter.title}</h1>
                 <p>{post.excerpt}</p>
+                <Link to={post.fields.slug}>
+                  <Button className="button">Lees meer</Button>
+                </Link>
               </div>
             </Post>
           ))}
@@ -122,5 +128,9 @@ const Post = styled.div`
     @media (max-width: 1150px) {
       padding: 32px 40px 32px 40px;
     }
+  }
+
+  .button {
+    margin-top: 20px;
   }
 `;

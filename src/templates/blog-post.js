@@ -1,5 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
+import styled from "styled-components";
 import { kebabCase } from "lodash";
 import Helmet from "react-helmet";
 import { graphql, Link } from "gatsby";
@@ -17,7 +18,7 @@ export const BlogPostTemplate = ({
   const PostContent = contentComponent || Content;
 
   return (
-    <section className="section">
+    <Wrapper className="section">
       {helmet || ""}
       <div className="container content">
         <div className="columns">
@@ -27,22 +28,10 @@ export const BlogPostTemplate = ({
             </h1>
             <p>{description}</p>
             <PostContent content={content} />
-            {tags && tags.length ? (
-              <div style={{ marginTop: `4rem` }}>
-                <h4>Tags</h4>
-                <ul className="taglist">
-                  {tags.map(tag => (
-                    <li key={tag + `tag`}>
-                      <Link to={`/tags/${kebabCase(tag)}/`}>{tag}</Link>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            ) : null}
           </div>
         </div>
       </div>
-    </section>
+    </Wrapper>
   );
 };
 
@@ -99,5 +88,13 @@ export const pageQuery = graphql`
         tags
       }
     }
+  }
+`;
+
+const Wrapper = styled.section`
+  background-color: #feb8b8;
+  padding: 40px 30px;
+  @media (min-width: 700px) {
+    padding: 40px 15%;
   }
 `;
