@@ -29,7 +29,7 @@ description: >-
   andere lokale drankproducenten. Voor de wijnen maken wij gebruik van een
   uitgebreid netwerk aan Limburgse wijnproducenten.
 featuredpost: true
-featuredimage: /img/screenshot-2019-10-15-at-21.59.40.png
+featuredimage: /img/screenshot-2019-10-30-at-17.33.24.png
 tags:
   - festival
 ---
