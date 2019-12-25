@@ -5,7 +5,7 @@ date: 2019-10-09T17:56:27.084Z
 description: >-
   State of Nature gaat vanuit de filosofie in op hoe men met elkaar om zou gaan
   als er geen regels, maatschappij en overheid zouden bestaan. Deze filosofie
-  draait om een samen- leving zonder restricties.
+  draait om een samenleving zonder restricties.
 
   Het zit in de mens om buiten te leven, spelen en bewegen. In een wereld die
   steeds meer digitaliseert en waarbij mensen elkaar niet meer zien als ze met
@@ -21,8 +21,7 @@ description: >-
   heeft en daar-
    5
   door de band met de kwaliteiten versterken. Deze hoofdlijn in onze visie sluit
-  aan bij de doelstellingen die vanuit het Cittaslow keur- merk als basis
-  dienen.
+  aan bij de doelstellingen die vanuit het Cittaslow keurmerk als basis dienen.
 
   Onder cultuur verstaan wij al het materiële
 
