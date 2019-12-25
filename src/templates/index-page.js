@@ -5,8 +5,10 @@ import styled from "styled-components";
 
 // Components
 import Layout from "../components/Layout";
-import BlogRoll from "../components/BlogRoll";
-import Header from "../components/layout/header/Header";
+
+// Assets
+import stateOfNatureVideo from "../video/stateOfNatureVideo.mp4";
+import videoPoster from "../img/videoPoster.png";
 
 export const IndexPageTemplate = ({
   image,
@@ -17,8 +19,24 @@ export const IndexPageTemplate = ({
   description,
   intro
 }) => (
-  <Wrapper>
-    <BlogRoll />
+  <Wrapper videoPoster={videoPoster}>
+    <video
+      autoPlay
+      muted
+      loop
+      className="video"
+      poster={videoPoster}
+      style={{
+        position: "fixed",
+        right: 0,
+        bottom: 0,
+        width: "100%",
+        height: "100%",
+        backgroundColor: "#030203"
+      }}
+    >
+      <source src={stateOfNatureVideo} type="video/mp4" />
+    </video>
   </Wrapper>
 );
 
@@ -63,9 +81,17 @@ IndexPage.propTypes = {
 export default IndexPage;
 
 const Wrapper = styled.div`
-  .header {
-    width: 100%;
-    height: 300px;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  overflow: hidden;
+  z-index: -100;
+  height: 100vh;
+
+  .video {
+    object-fit: cover;
   }
 `;
 

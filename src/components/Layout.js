@@ -68,7 +68,7 @@ const TemplateWrapper = ({ children }) => {
             <GlobalStyle />
             <Header />
             <Main>{children}</Main>
-            <Footer />
+            {/* <Footer /> */}
           </Wrapper>
         </Container>
       </ThemeProvider>
@@ -86,7 +86,7 @@ const Container = styled.div`
     top: 0;
     left: 0;
     z-index: -1;
-    max-width: 730px;
+    max-width: 650px;
     @media (max-width: 320px) {
       width: 180px;
     }

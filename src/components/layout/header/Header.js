@@ -44,6 +44,7 @@ export default Header;
 const Wrapper = styled.header`
   margin: 40px 0 90px 0;
   display: flex;
+  ${({ theme }) => theme.fontSmoothing};
   @media (max-width: 1150px) {
     margin: 40px 16px 55px 16px;
   }
@@ -60,7 +61,7 @@ const Wrapper = styled.header`
   }
   .nav-item {
     font-size: 1.1rem;
-    color: ${({ theme }) => theme.purple};
+    color: ${({ theme }) => theme.white};
     margin-right: 16px;
     text-decoration: none;
     max-height: 21px;
@@ -76,11 +77,11 @@ const Wrapper = styled.header`
     .facebook,
     .instagram {
       margin: 8px;
-      fill: ${({ theme }) => theme.purple};
+      fill: ${({ theme }) => theme.white};
     }
     .facebook {
       width: 12px;
-      fill: ${({ theme }) => theme.purple};
+      fill: ${({ theme }) => theme.white};
     }
     .instagram {
       width: 22px;
