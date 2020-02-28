@@ -241,5 +241,11 @@ collections:
         label: "House Rules"
         name: "rules"
         fields:
-          - { label: Title, name: title, widget: string }
-          - { label: Description, name: description, widget: text }
+          - {
+              label: "Template Key",
+              name: "templateKey",
+              widget: "hidden",
+              default: "about-page",
+            }
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Body", name: "body", widget: "markdown" }
