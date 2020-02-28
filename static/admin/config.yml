@@ -237,4 +237,10 @@ collections:
                       ],
                   },
                 ],
-            }
+            },
+      - file: "src/pages/houseRules/index.md"
+        label: 'House Rules'
+        name: 'rules'
+        fields:
+          - { label: Title, name: title, widget: string }
+          - { label: Description, name: description, widget: text }
