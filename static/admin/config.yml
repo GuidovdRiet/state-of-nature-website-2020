@@ -115,14 +115,14 @@ collections:
                 ],
             }
       - file: "src/pages/about/index.md"
-        label: "House Rules"
-        name: "rules"
+        label: "About"
+        name: "about"
         fields:
           - {
               label: "Template Key",
               name: "templateKey",
               widget: "hidden",
-              default: "house-rules",
+              default: "about-page",
             }
           - { label: "Title", name: "title", widget: "string" }
           - { label: "Body", name: "body", widget: "markdown" }
@@ -237,9 +237,9 @@ collections:
                   },
                 ],
             }
-      - file: "src/pages/houserules/index.md"
-        label: "houserules"
-        name: "houserules"
+      - file: "src/pages/rules/index.md"
+        label: "rules"
+        name: "rules"
         fields:
           - {
               label: "Template Key",

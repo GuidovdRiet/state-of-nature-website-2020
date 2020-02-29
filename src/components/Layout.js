@@ -81,6 +81,7 @@ export default TemplateWrapper;
 const Container = styled.div`
   width: 100%;
   min-width: 320px;
+  margin-bottom: 70px;
   .corner-art {
     position: absolute;
     top: 0;
@@ -101,4 +102,6 @@ const Wrapper = styled.div`
 const Main = styled.div`
   width: 100%;
   height: 100%;
+  background-color: ${({ theme }) => theme.white};
+  padding: 80px 100px;
 `;
