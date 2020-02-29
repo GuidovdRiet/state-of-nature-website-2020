@@ -237,7 +237,7 @@ collections:
                   },
                 ],
             }
-      - file: "src/pages/houseRules/index.md"
+      - file: "src/pages/houserules/index.md"
         label: "House Rules"
         name: "rules"
         fields:
