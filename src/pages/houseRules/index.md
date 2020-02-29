@@ -1,6 +1,6 @@
 ---
-templateKey: "about-page"
-path: /about
+templateKey: "house-rules"
+path: /rules
 title: Huisregels
 description: >-
 o Sfeer en gezelligheid staat voorop op ons evenement en agressie, het
