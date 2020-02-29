@@ -30,8 +30,7 @@ Het is verboden op podia, in tenten en gebouwen van het evenement te klimmen.
 
 Het is niet toegestaan om op het terrein flyers te verspreiden of posters of stickers te plakken tenzij je toestemming hebt van de organisatie.
 
-Vandalisme en graffiti zijn uiteraard streng verboden. Wie wordt betrapt zal worden overgedragen aan de politie. Ook zal eventuele schade op je verhaald \
-worden.
+Vandalisme en graffiti zijn uiteraard streng verboden. Wie wordt betrapt zal worden overgedragen aan de politie. Ook zal eventuele schade op je verhaald worden.
 
 Het maken van vuur op het terrein is ten strengste verboden.
 
