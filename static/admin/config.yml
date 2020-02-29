@@ -238,8 +238,8 @@ collections:
                 ],
             }
       - file: "src/pages/houserules/index.md"
-        label: "Rules"
-        name: "rules"
+        label: "houserules"
+        name: "houserules"
         fields:
           - {
               label: "Template Key",
