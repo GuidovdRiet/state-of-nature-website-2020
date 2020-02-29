@@ -1,5 +1,5 @@
 ---
 templateKey: "house-rules"
-path: /houserules
+path: /rules
 title: About our values
 ---

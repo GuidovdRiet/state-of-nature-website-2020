@@ -237,15 +237,3 @@ collections:
                   },
                 ],
             }
-      - file: "src/pages/houserules/index.md"
-        label: "Rules"
-        name: "rules"
-        fields:
-          - {
-              label: "Template Key",
-              name: "templateKey",
-              widget: "hidden",
-              default: "house-rules",
-            }
-          - { label: "Title", name: "title", widget: "string" }
-          - { label: "Body", name: "body", widget: "markdown" }
