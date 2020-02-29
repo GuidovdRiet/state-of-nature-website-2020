@@ -102,6 +102,4 @@ const Wrapper = styled.div`
 const Main = styled.div`
   width: 100%;
   height: 100%;
-  background-color: ${({ theme }) => theme.white};
-  padding: 80px 100px;
 `;
