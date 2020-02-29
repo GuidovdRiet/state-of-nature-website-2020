@@ -115,14 +115,14 @@ collections:
                 ],
             }
       - file: "src/pages/about/index.md"
-        label: "About"
-        name: "about"
+        label: "House Rules"
+        name: "rules"
         fields:
           - {
               label: "Template Key",
               name: "templateKey",
               widget: "hidden",
-              default: "about-page",
+              default: "house-rules",
             }
           - { label: "Title", name: "title", widget: "string" }
           - { label: "Body", name: "body", widget: "markdown" }
