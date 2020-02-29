@@ -12,8 +12,6 @@ export const HouseRulesTemplate = ({
 }) => {
   const PageContent = contentComponent || Content;
 
-  console.log({ content });
-
   return (
     <section className="section section--gradient">
       <div className="container">
