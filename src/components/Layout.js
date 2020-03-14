@@ -84,6 +84,7 @@ const Container = styled.div`
   margin-bottom: 70px;
   .corner-art {
     position: absolute;
+    pointer-events: none;
     top: 0;
     left: 0;
     z-index: -1;
