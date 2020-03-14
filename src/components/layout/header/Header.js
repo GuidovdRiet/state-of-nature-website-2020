@@ -16,7 +16,7 @@ const Header = () => {
           Home
         </Link>
         <Link to="/about" className="nav-item">
-          Huisregels
+          Regels
         </Link>
         <Link to="/contact" className="nav-item">
           Contact
