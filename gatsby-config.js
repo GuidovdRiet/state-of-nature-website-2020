@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: "State of Nature | 2020",
-    description: `Connect to your very own ‘State of Nature’. Free your mind of obligations and give yourself a taste of Nature’s beverages, delicious foods and a variety of acoustic and electronic tunes. Join our tribe on June 15th and experience your ‘State of Nature’`
+    description: `Connect to your very own ‘State of Nature’. Free your mind of obligations and give yourself a taste of Nature’s beverages, delicious foods and a variety of acoustic and electronic tunes. Join our tribe and experience your ‘State of Nature’`
   },
   plugins: [
     "gatsby-plugin-react-helmet",
