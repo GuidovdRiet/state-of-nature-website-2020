@@ -2,7 +2,7 @@
 templateKey: house-rules
 title: Huisregels
 ---
-* [Tijdens evenementen ben je verplicht je aan de corona maatregelen te houden](https://www.rijksoverheid.nl/onderwerpen/coronavirus-covid-19/nederlandse-maatregelen-tegen-het-coronavirus#:~:text=De%20Nederlandse%20corona%2Daanpak%20is,de%20maatregelen%20te%20blijven%20houden.).
+* [Tijdens evenementen ben je verplicht je aan de coronamaatregelen te houden](https://www.rijksoverheid.nl/onderwerpen/coronavirus-covid-19/nederlandse-maatregelen-tegen-het-coronavirus#:~:text=De%20Nederlandse%20corona%2Daanpak%20is,de%20maatregelen%20te%20blijven%20houden.).
 * Sfeer en gezelligheid staat voorop op ons evenement en agressie, het dreigen met en gebruiken van geweld, discriminerende opmerkingen maken in woord en/of gebaar, seksuele intimidatie en wildplassen wordt niet getolereerd.
 * We accepteren geen blikjes en glaswerk op het terrein. 
 * Het evenement is toegankelijk voor alle leeftijden; kinderen jonger dan 16 jaar kunnen onder begeleiding van een volwassene het terrein op.
